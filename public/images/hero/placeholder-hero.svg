@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0A0A0A"/>
+  <rect x="2" y="2" width="1916" height="1076" fill="none" stroke="#EFE9DE" stroke-width="1" stroke-opacity="0.12"/>
+  <!-- Decorative thin tattoo-line motif -->
+  <g stroke="#EFE9DE" stroke-opacity="0.15" fill="none">
+    <circle cx="960" cy="540" r="200" stroke-width="0.5"/>
+    <circle cx="960" cy="540" r="180" stroke-width="0.5"/>
+    <line x1="760" y1="540" x2="1160" y2="540" stroke-width="0.5"/>
+    <line x1="960" y1="340" x2="960" y2="740" stroke-width="0.5"/>
+  </g>
+  <text x="960" y="520" font-family="Georgia, serif" font-style="italic" font-size="24" fill="#A6A19A" text-anchor="middle" dominant-baseline="middle">
+    [ Hero Photograph ]
+  </text>
+  <text x="960" y="560" font-family="monospace" font-size="12" fill="#A6A19A" text-anchor="middle" dominant-baseline="middle">
+    Replace with landscape hero image — 1920×1080 or larger
+  </text>
+</svg>

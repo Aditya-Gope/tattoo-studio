@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Atelier Ink — Luxury Tattoo Studio Web Experience
 
-## Getting Started
+> **High-Performance, Cinematic Concept Website for a Custom Tattoo Studio.**  
+> Crafted with Next.js 16, React 19, TypeScript, Tailwind CSS, and GSAP Motion Design.
 
-First, run the development server:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAditya-Gope%2Ftattoo-studio)
 
+---
+
+## 🎨 Visual Identity & Key Highlights
+
+- **Black Editorial Theme:** Minimalist luxury aesthetic with Deep Ink Black (`#0A0A0A`), Charcoal (`#151515`), Warm Bone (`#EFE9DE`), and Oxblood (`#7C2027`) accents.
+- **Cinematic Hero Experience:**
+  - Automated three-slide carousel driven by an "Ink Curtain" transition that completely prevents transparent double-exposure ghosting.
+  - Typewriter headline effect with zero layout shift (built on CSS Grid measurement).
+  - Scroll-linked subtle parallax layer decoupled from slide transition logic.
+  - Deterministic z-index layering and single-instance action controls.
+- **Global GSAP Choreography:** Word-by-word masked reveal animations across all section headings, staggered card reveals, and smooth scroll triggers.
+- **Mobile-First & Fully Responsive:** Pixel-perfect layout across 360px mobile viewports up to ultrawide desktop screens.
+- **Accessible & Performance-Optimized:** `prefers-reduced-motion` compliance, automated accessibility attributes, and Next.js Turbopack-optimized bundle.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
+- **UI Library:** [React 19](https://react.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Motion:** [GSAP 3](https://gsap.com/) & ScrollTrigger
+- **Validation:** [Zod](https://zod.dev/)
+- **Package Manager:** npm
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Aditya-Gope/tattoo-studio.git
+cd tattoo-studio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run development server
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### 4. Build for production
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+tattoo-studio-web/
+├── public/                # Static assets, local images & concept photography
+│   └── images/
+├── src/
+│   ├── app/               # Next.js App Router pages
+│   │   ├── page.tsx       # Homepage (Hero, Brand Statement, Portfolio, Style Explorer, etc.)
+│   │   ├── portfolio/     # Selected portfolio showcase & detail views
+│   │   ├── artists/       # Resident artists & concept bios
+│   │   ├── studio/        # Studio tour, hygiene protocols & facilities
+│   │   ├── book/          # Consultation booking flow
+│   │   └── api/booking/   # Server route for handling consultations
+│   ├── components/
+│   │   ├── home/          # Hero, BrandStatement, PortfolioSection, StyleExplorer, etc.
+│   │   ├── ui/            # Buttons, Containers, Lightbox, SectionHeadings
+│   │   └── ui/animations/ # TypewriterText, AnimatedHeading, AnimatedList, etc.
+│   ├── lib/               # Content loaders, splitText utility, class helpers
+│   └── data/              # Studio data & portfolio catalogue
+└── next.config.ts         # Next.js configuration
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 1-Click Live Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy directly to **Vercel** with zero configuration:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAditya-Gope%2Ftattoo-studio)
+
+---
+
+## 📄 License
+
+MIT © [Aditya Gope](https://github.com/Aditya-Gope)

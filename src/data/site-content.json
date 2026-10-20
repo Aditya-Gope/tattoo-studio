@@ -1,0 +1,232 @@
+{
+  "studio": {
+    "name": "Concept Studio",
+    "shortName": "CONCEPT",
+    "tagline": "Your Story, Etched in Ink",
+    "city": "Mumbai",
+    "region": "Maharashtra",
+    "country": "India",
+    "address": "[Studio location will be added]",
+    "landmark": "[Landmark will be added]",
+    "phoneDisplay": "+91 99999 99999",
+    "whatsappNumber": "919999999999",
+    "email": "hello@example.com",
+    "instagramHandle": "@conceptstudio",
+    "instagramUrl": "#",
+    "mapsUrl": "#",
+    "directionsUrl": "#"
+  },
+  "openingHours": [
+    {
+      "days": "Monday - Friday",
+      "hours": "10:00 AM - 8:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "hours": "10:00 AM - 9:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "hours": "By appointment"
+    }
+  ],
+  "hero": {
+    "primaryCta": "Book a Consultation",
+    "secondaryCta": "Explore Our Work",
+    "slides": [
+      {
+        "id": "slide-1",
+        "desktopImage": "/images/hero/hero-01-desktop.webp",
+        "mobileImage": "/images/hero/hero-01-mobile.webp",
+        "label": "PRECISION IN EVERY LINE",
+        "eyebrow": "MUMBAI • CUSTOM TATTOO STUDIO",
+        "titleLine1": "YOUR STORY.",
+        "titleLine2": "ETCHED IN INK.",
+        "description": "Custom tattoo experiences shaped around your story, your body and your vision.",
+        "alt": "Tattoo artist working on customer"
+      },
+      {
+        "id": "slide-2",
+        "desktopImage": "/images/hero/hero-02-desktop.webp",
+        "mobileImage": "/images/hero/hero-02-mobile.webp",
+        "label": "ART MADE PERSONAL",
+        "eyebrow": "ORIGINAL • PERSONAL • TIMELESS",
+        "titleLine1": "DESIGNED FOR YOU.",
+        "titleLine2": "MADE TO LAST.",
+        "description": "From the first sketch to the final detail, every piece is created around your individual story.",
+        "alt": "Close-up of fine-line tattoo"
+      },
+      {
+        "id": "slide-3",
+        "desktopImage": "/images/hero/hero-03-desktop.webp",
+        "mobileImage": "/images/hero/hero-03-mobile.webp",
+        "label": "CREATED WITH CARE",
+        "eyebrow": "ARTISTRY • HYGIENE • CARE",
+        "titleLine1": "PRECISION & PASSION.",
+        "titleLine2": "PERMANENT ART.",
+        "description": "A thoughtful tattoo experience built on creativity, careful preparation and attention to every detail.",
+        "alt": "Tattoo artist preparing stencil"
+      }
+    ]
+  },
+  "styles": [
+    "Fine Line",
+    "Blackwork",
+    "Realism",
+    "Minimal",
+    "Geometric",
+    "Lettering",
+    "Traditional",
+    "Custom Design"
+  ],
+  "artists": [
+    {
+      "name": "Concept Artist",
+      "role": "Tattoo Artist",
+      "experience": "Concept Demo",
+      "specialities": [
+        "Fine Line",
+        "Blackwork"
+      ],
+      "bio": "Concept Artist — replace with actual studio artist when available.",
+      "image": "/images/artists/demo-artist-portrait.webp",
+      "instagramUrl": "#"
+    }
+  ],
+  "featuredPortfolio": [
+    {
+      "slug": "portfolio-item-01",
+      "title": "Fine Line Concept",
+      "style": "Fine Line",
+      "placement": "Forearm",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-01.webp",
+      "alt": "Concept image for Fine Line",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-02",
+      "title": "Blackwork Concept",
+      "style": "Blackwork",
+      "placement": "Upper arm",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-02.webp",
+      "alt": "Concept image for Blackwork",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-03",
+      "title": "Realism Concept",
+      "style": "Realism",
+      "placement": "Shoulder",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-03.webp",
+      "alt": "Concept image for Realism",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-04",
+      "title": "Minimal Concept",
+      "style": "Minimal",
+      "placement": "Calf",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-04.webp",
+      "alt": "Concept image for Minimal",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-05",
+      "title": "Geometric Concept",
+      "style": "Geometric",
+      "placement": "Back",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-05.webp",
+      "alt": "Concept image for Geometric",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-06",
+      "title": "Lettering Concept",
+      "style": "Lettering",
+      "placement": "Wrist",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-06.webp",
+      "alt": "Concept image for Lettering",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-07",
+      "title": "Traditional Concept",
+      "style": "Traditional",
+      "placement": "Leg",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-07.webp",
+      "alt": "Concept image for Traditional",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-08",
+      "title": "Botanical Concept",
+      "style": "Botanical",
+      "placement": "Arm",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-08.webp",
+      "alt": "Concept image for Botanical",
+      "isDemo": true
+    },
+    {
+      "slug": "portfolio-item-09",
+      "title": "Custom Design Concept",
+      "style": "Custom Design",
+      "placement": "Chest",
+      "artist": "Concept Artist",
+      "image": "/images/portfolio/tattoo-09.webp",
+      "alt": "Concept image for Custom Design",
+      "isDemo": true
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Demo User",
+      "quote": "This is a sample testimonial text clearly marked in the data as demo content. The studio is extremely professional.",
+      "source": "Demo Mode",
+      "sourceUrl": "#",
+      "type": "text"
+    }
+  ],
+  "videoReviews": [
+    {
+      "name": "Demo Client 1",
+      "caption": "Sample demo video review placeholder.",
+      "instagramUrl": "#",
+      "poster": "/images/reviews/demo-review-01.svg",
+      "hasPermission": true
+    },
+    {
+      "name": "Demo Client 2",
+      "caption": "Sample demo video review placeholder.",
+      "instagramUrl": "#",
+      "poster": "/images/reviews/demo-review-02.svg",
+      "hasPermission": true
+    },
+    {
+      "name": "Demo Client 3",
+      "caption": "Sample demo video review placeholder.",
+      "instagramUrl": "#",
+      "poster": "/images/reviews/demo-review-03.svg",
+      "hasPermission": true
+    }
+  ],
+  "booking": {
+    "notice": "Submitting this form does not confirm an appointment. Our studio will contact you after reviewing your request.",
+    "maximumUploads": 5,
+    "maximumFileSizeMb": 5,
+    "minimumAge": 18
+  },
+  "seo": {
+    "siteUrl": "http://localhost:3000",
+    "defaultTitle": "Concept Studio | Custom Tattoo Studio",
+    "defaultDescription": "Discover custom tattoos, professional artists and a clean studio experience. Request your consultation today.",
+    "ogImage": "/images/seo/og-image.webp"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "studio": {
+    "name": "[TATTOO STUDIO NAME]",
+    "shortName": "[STUDIO NAME]",
+    "tagline": "Your Story, Etched in Ink",
+    "city": "[CITY]",
+    "region": "[STATE]",
+    "country": "India",
+    "address": "[COMPLETE SHOP ADDRESS]",
+    "landmark": "[NEARBY LANDMARK]",
+    "phoneDisplay": "+91 XXXXX XXXXX",
+    "whatsappNumber": "91XXXXXXXXXX",
+    "email": "hello@example.com",
+    "instagramHandle": "@yourhandle",
+    "instagramUrl": "https://instagram.com/yourhandle",
+    "mapsUrl": "https://maps.google.com/?q=YOUR+SHOP",
+    "directionsUrl": "https://maps.google.com/?q=YOUR+SHOP"
+  },
+  "openingHours": [
+    {
+      "days": "Monday - Friday",
+      "hours": "10:00 AM - 8:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "hours": "10:00 AM - 9:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "hours": "By appointment"
+    }
+  ],
+  "hero": {
+    "eyebrow": "[CITY] • CUSTOM TATTOO STUDIO",
+    "titleLine1": "YOUR STORY.",
+    "titleLine2": "ETCHED IN INK.",
+    "description": "Custom tattoo experiences shaped around your story, your body and your vision.",
+    "primaryCta": "Book a Consultation",
+    "secondaryCta": "Explore Our Work"
+  },
+  "styles": [
+    "Fine Line",
+    "Blackwork",
+    "Realism",
+    "Minimal",
+    "Geometric",
+    "Lettering",
+    "Traditional",
+    "Custom Design"
+  ],
+  "artists": [
+    {
+      "name": "[ARTIST NAME]",
+      "role": "Tattoo Artist",
+      "experience": "[YEARS OF EXPERIENCE]",
+      "specialities": ["Fine Line", "Blackwork"],
+      "bio": "[VERIFIED ARTIST BIOGRAPHY]",
+      "image": "/images/artists/artist-01.webp",
+      "instagramUrl": "https://instagram.com/yourhandle"
+    }
+  ],
+  "featuredPortfolio": [
+    {
+      "slug": "portfolio-item-01",
+      "title": "[TATTOO TITLE]",
+      "style": "Fine Line",
+      "placement": "[BODY PLACEMENT]",
+      "artist": "[ARTIST NAME]",
+      "image": "/images/portfolio/tattoo-01.webp",
+      "alt": "[DESCRIBE THE ACTUAL TATTOO]"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "[CUSTOMER NAME]",
+      "quote": "[REAL CUSTOMER REVIEW]",
+      "source": "Instagram",
+      "sourceUrl": "https://instagram.com/p/POST_ID",
+      "type": "text"
+    }
+  ],
+  "videoReviews": [
+    {
+      "name": "[CUSTOMER NAME]",
+      "caption": "[SHORT REVIEW SUMMARY]",
+      "instagramUrl": "https://instagram.com/reel/REEL_ID",
+      "poster": "/images/reviews/review-01-poster.webp",
+      "hasPermission": false
+    }
+  ],
+  "booking": {
+    "notice": "Submitting this form does not confirm an appointment. Our studio will contact you after reviewing your request.",
+    "maximumUploads": 5,
+    "maximumFileSizeMb": 5,
+    "minimumAge": 18
+  },
+  "seo": {
+    "siteUrl": "https://example.com",
+    "defaultTitle": "[STUDIO NAME] | Custom Tattoo Studio in [CITY]",
+    "defaultDescription": "Discover custom tattoos, professional artists and a clean studio experience in [CITY]. Request your consultation today.",
+    "localKeyword": "Tattoo studio in [CITY]"
+  }
+}

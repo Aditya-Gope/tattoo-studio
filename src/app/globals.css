@@ -1,26 +1,140 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────
+   Design tokens — Tattoo Studio
+   ───────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink-black:      #0A0A0A;
+  --charcoal:       #151515;
+  --warm-bone:      #EFE9DE;
+  --smoke-grey:     #A6A19A;
+  --oxblood:        #7C2027;
+  --border-subtle:  rgba(239, 233, 222, 0.16);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink-black:     #0A0A0A;
+  --color-charcoal:      #151515;
+  --color-warm-bone:     #EFE9DE;
+  --color-smoke-grey:    #A6A19A;
+  --color-oxblood:       #7C2027;
+  --color-border-subtle: rgba(239, 233, 222, 0.16);
+
+  /* Map to Tailwind defaults so bg-background etc. work */
+  --color-background:    var(--ink-black);
+  --color-foreground:    var(--warm-bone);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─────────────────────────────────────────────
+   Base reset
+   ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* prevent horizontal overflow globally */
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--ink-black);
+  color: var(--warm-bone);
+  min-height: 100svh;
+  overflow-x: hidden;
 }
+
+/* ─────────────────────────────────────────────
+   Focus ring — visible, brand-coloured
+   ───────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--warm-bone);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+
+
+/* ─────────────────────────────────────────────
+   Custom scrollbar (desktop webkit)
+   ───────────────────────────────────────────── */
+@media (hover: hover) {
+  ::-webkit-scrollbar              { width: 6px; }
+  ::-webkit-scrollbar-track        { background: var(--charcoal); }
+  ::-webkit-scrollbar-thumb        { background: var(--smoke-grey); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover  { background: var(--warm-bone); }
+}
+
+/* ─────────────────────────────────────────────
+   Typography helpers
+   ───────────────────────────────────────────── */
+.font-editorial {
+  /* Cormorant Garamond / Bodoni Moda via CSS variable set in layout.tsx */
+  font-family: var(--font-editorial), Georgia, serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.font-sans-brand {
+  font-family: var(--font-sans-brand), system-ui, sans-serif;
+}
+
+.font-mono-brand {
+  font-family: var(--font-mono-brand), monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Fluid editorial headline */
+.headline-xl {
+  font-size: clamp(2.5rem, 7vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+
+.headline-lg {
+  font-size: clamp(2rem, 5vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+
+.headline-md {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 300;
+}
+
+/* ─────────────────────────────────────────────
+   Utility: sr-only (screen-reader only)
+   ───────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ─────────────────────────────────────────────
+   Hero clip utility
+   ───────────────────────────────────────────── */
+.clip-inset-full {
+  clip-path: inset(0 0 100% 0);
+}
+
+.clip-inset-none {
+  clip-path: inset(0 0 0% 0);
+}
+
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
